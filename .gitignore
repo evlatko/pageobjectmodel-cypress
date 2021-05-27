@@ -5,3 +5,7 @@ cypress/screenshots
 cypress/videos
 mochawesome-report
 report.json
+allure-report/data
+allure-report/export
+allure-report/history
+allure-report/widget
