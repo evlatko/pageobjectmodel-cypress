@@ -37,7 +37,7 @@
     "cache:clear": "npx cypress cache clear",
     "generate-allure": "allure generate allure-results --clean -o allure-reports",
     "open-allure": "allure open allure-reports",
-    "serve-allure": "allure serve allure-results",
+    "serve-allure": "allure serve allure-results || npm run open-allure",
     "clean-allure": "rm -r allure-results/"
   },
   "repository": {
