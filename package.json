@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evlatko/rs2_framework.git"
+    "url": "git+https://github.com/evlatko/pageobjectmodel-cypress"
   },
   "keywords": [
     "cypress",
