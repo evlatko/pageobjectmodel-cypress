@@ -31,7 +31,7 @@
     "cypress": "cypress open",
     "allure:clear": "if exist allure-results rmdir /q /s allure-results && if exist allure-report rmdir /q /s allure-report && if exist cypress\\screenshots rmdir /q /s cypress\\screenshots && if exist cypress\\videos rmdir /q /s cypress\\videos",
     "pretest": "npm run allure:clear",
-    "test": "npx cypress run --config video=true --record --key 3f4e069e-0d1a-47e1-afdd-74dc19d3b990 || npm run generate-allure || serve-allure",
+    "test": "npx cypress run --config video=true --record --key 3f4e069e-0d1a-47e1-afdd-74dc19d3b990 || npm run generate-allure || npm run serve-allure",
     "debug": "DEBUG=cypress:* npx cypress run",
     "cache:list": "npx cypress cache list",
     "cache:clear": "npx cypress cache clear",
