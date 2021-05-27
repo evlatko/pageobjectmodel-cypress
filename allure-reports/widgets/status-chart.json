@@ -1,0 +1,21 @@
+[ {
+  "uid" : "33cce6ac476e5463",
+  "name" : ".focus() - focus on a DOM element",
+  "time" : {
+    "start" : 1622105693863,
+    "stop" : 1622105694472,
+    "duration" : 609
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c8e561e28c96d99",
+  "name" : ".type() Valid email - type into a DOM element",
+  "time" : {
+    "start" : 1622105692366,
+    "stop" : 1622105693751,
+    "duration" : 1385
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

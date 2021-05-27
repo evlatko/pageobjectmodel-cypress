@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu May 27 10:54:53 CEST 2021","Thu May 27 10:54:54 CEST 2021","609","","Actions","","","",".focus() - focus on a DOM element",""
+"failed","Thu May 27 10:54:52 CEST 2021","Thu May 27 10:54:53 CEST 2021","1385","","Actions","","","",".type() Valid email - type into a DOM element",""

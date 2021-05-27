@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Cannot read property 'retries' of undefined",
+      "children" : [ {
+        "name" : ".type() Valid email - type into a DOM element",
+        "uid" : "7c8e561e28c96d99",
+        "parentUid" : "3ca39a44a2acd5eb749175a718c0d869",
+        "status" : "failed",
+        "time" : {
+          "start" : 1622105692366,
+          "stop" : 1622105693751,
+          "duration" : 1385
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3ca39a44a2acd5eb749175a718c0d869"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

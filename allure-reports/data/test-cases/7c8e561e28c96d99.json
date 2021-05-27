@@ -1,0 +1,280 @@
+{
+  "uid" : "7c8e561e28c96d99",
+  "name" : ".type() Valid email - type into a DOM element",
+  "fullName" : ".type() Valid email - type into a DOM element",
+  "historyId" : "d2e9588dba9d1ae432d921ff1e726648",
+  "time" : {
+    "start" : 1622105692366,
+    "stop" : 1622105693751,
+    "duration" : 1385
+  },
+  "status" : "failed",
+  "statusMessage" : "Cannot read property 'retries' of undefined",
+  "statusTrace" : "TypeError: Cannot read property 'retries' of undefined\n    at Context.eval (https://example.cypress.io/__cypress/tests?p=cypress\\integration\\pom_example\\actions.spec.js:175:27)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "log (\"Global Before Hook #########################\")",
+      "time" : {
+        "start" : 1622105689837,
+        "stop" : 1622105689865,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "task (\"log\"; \"Global Before Hook #########################\")",
+        "time" : {
+          "start" : 1622105689839,
+          "stop" : 1622105689865,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Cannot read property 'retries' of undefined",
+    "statusTrace" : "TypeError: Cannot read property 'retries' of undefined\n    at Context.eval (https://example.cypress.io/__cypress/tests?p=cypress\\integration\\pom_example\\actions.spec.js:175:27)",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1622105692379,
+        "stop" : 1622105692415,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "log (\"Run before every test in every spec file*******\")",
+        "time" : {
+          "start" : 1622105692405,
+          "stop" : 1622105692414,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "task (\"log\"; \"Run before every test in every spec file*******\")",
+          "time" : {
+            "start" : 1622105692405,
+            "stop" : 1622105692414,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1622105692418,
+        "stop" : 1622105692776,
+        "duration" : 358
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"https://example.cypress.io/commands/actions\")",
+        "time" : {
+          "start" : 1622105692420,
+          "stop" : 1622105692775,
+          "duration" : 355
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "\"after each\" hook",
+      "time" : {
+        "start" : 1622105693753,
+        "stop" : 1622105693834,
+        "duration" : 81
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "log (\"Run after each every test in every spec file-------\")",
+        "time" : {
+          "start" : 1622105693755,
+          "stop" : 1622105693833,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "task (\"log\"; \"Run after each every test in every spec file-------\")",
+          "time" : {
+            "start" : 1622105693755,
+            "stop" : 1622105693833,
+            "duration" : 78
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "8e54a16686f6c65f",
+      "name" : "pom_example/actions.spec.js.mp4",
+      "source" : "8e54a16686f6c65f.mp4",
+      "type" : "video/mp4",
+      "size" : 320490
+    }, {
+      "uid" : "3d5e312dbcc35077",
+      "name" : "pom_example/actions.spec.js:2021-05-27T08:54:51.549Z",
+      "source" : "3d5e312dbcc35077.png",
+      "type" : "image/png",
+      "size" : 189944
+    }, {
+      "uid" : "66c870f4697245df",
+      "name" : "pom_example/actions.spec.js:2021-05-27T08:54:52.897Z",
+      "source" : "66c870f4697245df.png",
+      "type" : "image/png",
+      "size" : 232088
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "log (\"Global After Hook ##########################\")",
+      "time" : {
+        "start" : 1622105694510,
+        "stop" : 1622105694544,
+        "duration" : 34
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "task (\"log\"; \"Global After Hook ##########################\")",
+        "time" : {
+          "start" : 1622105694511,
+          "stop" : 1622105694544,
+          "duration" : 33
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Actions"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3b9833aec6ac9bb7",
+      "status" : "failed",
+      "statusDetails" : "Cannot read property 'retries' of undefined",
+      "time" : {
+        "start" : 1622105689874,
+        "stop" : 1622105692262,
+        "duration" : 2388
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7c8e561e28c96d99.json",
+  "parameterValues" : [ ]
+}

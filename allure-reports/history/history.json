@@ -1,0 +1,41 @@
+{
+  "9669a37fa765c3bf4c36a146da118d95" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "33cce6ac476e5463",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622105693863,
+        "stop" : 1622105694472,
+        "duration" : 609
+      }
+    } ]
+  },
+  "d2e9588dba9d1ae432d921ff1e726648" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7c8e561e28c96d99",
+      "status" : "failed",
+      "statusDetails" : "Cannot read property 'retries' of undefined",
+      "time" : {
+        "start" : 1622105692366,
+        "stop" : 1622105693751,
+        "duration" : 1385
+      }
+    } ]
+  }
+}
