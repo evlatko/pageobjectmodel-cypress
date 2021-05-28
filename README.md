@@ -36,7 +36,7 @@ npm run test:video
 ```
 To run the tests with specific spec file, try
 ```
-npm run test --spec <Path to the spec file>
+npm run test -- --spec <Path to the spec file>
 ```
 
 ### Tags
@@ -50,17 +50,17 @@ TestFilter.any(['smoke', 'regression', ''], () => { // Specify the tags within t
 ```
 Make sure to have the empty string within the tag array, so that if no tags is specified in the test run to this testcase runs by default. To run the tests specific with any tags, try
 ```
-npm run test --env TEST_TAGS=regression
+npm run test -- --env TEST_TAGS=regression
 ```
 
 ### Headless
 To run the tests in headless mode,
 ```
-npm run test --headless
+npm run test -- --headless
 ```
 To run the tests in headed mode,
 ```
-npm run test --headed
+npm run test -- --headed
 ```
 
 ## Allure
@@ -77,7 +77,7 @@ npm run clean-allure
 Multiple browser is supported by cypress by default to run the tests against any specific browser, try
 
 ```
-npm run --env --browser <Browser name or path eg., chrome, firefox>
+npm run test -- --browser <Browser name or path eg., chrome, firefox>
 ```
 
 ## Reports
