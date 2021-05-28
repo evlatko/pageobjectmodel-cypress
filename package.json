@@ -8,6 +8,7 @@
     "cypress": "^7.4.0",
     "cypress-axe": "^0.12.2",
     "cypress-file-upload": "^5.0.7",
+    "npm-run-all": "^4.1.5",
     "typescript": "^4.3.2"
   },
   "name": "pageobjectmodel-cypress",
@@ -29,8 +30,8 @@
   },
   "scripts": {
     "cypress": "cypress open",
-    "allure:clear": "if exist allure-results rmdir /q /s allure-results && if exist allure-report rmdir /q /s allure-report && if exist cypress\\screenshots rmdir /q /s cypress\\screenshots && if exist cypress\\videos rmdir /q /s cypress\\videos",
-    "pretest": "npm run allure:clear",
+    "allure:clear": "if exist allure-results rmdir /q /s allure-results && if exist allure-reports rmdir /q /s allure-reports && if exist cypress\\screenshots rmdir /q /s cypress\\screenshots && if exist cypress\\videos rmdir /q /s cypress\\videos",
+    "pretest": "npm run allure:clear || npm run clean-allure",
     "test": "npx cypress run --config video=true --record --key 3f4e069e-0d1a-47e1-afdd-74dc19d3b990",
     "debug": "DEBUG=cypress:* npx cypress run",
     "cache:list": "npx cypress cache list",

@@ -1,0 +1,52 @@
+pipeline {
+    agent any
+
+    tools {nodejs "node"}
+
+    environment {
+        CHROME_BIN = '/bin/google-chrome'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checkout....'
+                git 'https://github.com/evlatko/pageobjectmodel-cypress.git'
+            }
+        }
+        
+        stage('Dependencies') {
+            steps {
+                echo 'Install NPM package....'
+                bat label: 'Install NPM package', script: 'npm install'
+            }
+        }
+
+        stage('e2e Tests') {
+            steps {
+                echo 'Executing e2e tests....'
+                bat label: 'Run e2e test', script: 'npm test'
+            }
+        }
+        
+        stage('Generate Allure report') {
+            steps {
+                echo 'Generat allure report....'
+                bat label: 'Generate allure report', script: 'npm run generate-allure'
+            }
+        }
+    }
+    post {
+      always {
+        script {
+          allure([
+            includeProperties: false,
+            jdk: '',
+            properties: [],
+            reportBuildPolicy: 'ALWAYS',
+            results: [[path: 'allure-results']]
+          ])
+        }
+      }
+	}
+}
