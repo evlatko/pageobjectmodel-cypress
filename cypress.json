@@ -3,7 +3,6 @@
   "trashAssetsBeforeRuns": true,
   "projectId": "5attjv",
   "reporter": "cypress-multi-reporters",
-  "testFiles": "**/**/example.spec.js",
   "reporterOptions": {
     "configFile": "cypress/support/cypress-multi-reporters.json"
   },
