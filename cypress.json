@@ -1,11 +1,15 @@
 {
+  "screenshotsFolder":"cypress/snapshots/actual",
+  "trashAssetsBeforeRuns": true,
   "projectId": "5attjv",
   "reporter": "cypress-multi-reporters",
-  "testFiles": "**/**/*.spec.js",
+  "testFiles": "**/**/example.spec.js",
   "reporterOptions": {
     "configFile": "cypress/support/cypress-multi-reporters.json"
   },
   "env": {
+    "failSilently": false,
+    "ENVIRONMENT":"test",
     "RETRIES": 2,
     "allureResultsPath": "allure-results",
     "allure": true

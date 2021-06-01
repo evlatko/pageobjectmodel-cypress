@@ -23,6 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+import 'cypress-audit/commands';
+import '@testing-library/cypress/add-commands';
+
 require('cypress-downloadfile/lib/downloadFileCommand')
 
 Cypress.Commands.add('clickLink', (label) => {
@@ -57,3 +60,8 @@ Cypress.Commands.add('setSessionStorage', (key, value) => {
 })
 
 Cypress.Commands.overwrite('log', (subject, message) => cy.task('log', message));
+
+const compareSnapshotCommand = require('cypress-visual-regression/dist/command');
+compareSnapshotCommand({
+  capture: 'fullPage'
+});

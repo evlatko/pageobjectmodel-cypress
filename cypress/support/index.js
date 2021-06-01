@@ -14,9 +14,15 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+
+import '@percy/cypress'
+import 'cypress-axe'
 import './commands'
 import './hooks'
 require('@shelex/cypress-allure-plugin');
+import "@testing-library/cypress/add-commands";
+import {configure} from '@testing-library/cypress'
 
+configure({ testIdAttribute: "data-test" });
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

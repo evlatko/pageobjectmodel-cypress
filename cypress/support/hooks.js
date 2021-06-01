@@ -1,9 +1,9 @@
 before(() => {
-    cy.log('Global Before Hook #########################');
+    cy.log('Run before all tests #########################');
 });
 
 after(() => {
-    cy.log('Global After Hook ##########################');
+    cy.log('Run after all tests ##########################');
 });
 
 beforeEach(() => {
@@ -11,5 +11,5 @@ beforeEach(() => {
 });
 
 afterEach(() => {
-    cy.log('Run after each every test in every spec file-------')
+    cy.log('Run after each every test in every spec file*******')
 });

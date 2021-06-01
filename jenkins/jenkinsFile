@@ -6,7 +6,7 @@ pipeline {
     environment {
         CHROME_BIN = '/bin/google-chrome'
     }
-
+    
     stages {
         stage('Checkout') {
             steps {
@@ -24,17 +24,38 @@ pipeline {
 
         stage('e2e Tests') {
             steps {
-                echo 'Executing e2e tests....'
-                bat label: 'Run e2e test', script: 'npm test'
+                script { 
+                    properties([
+                        parameters([
+                            choice(
+                                choices: ['chrome', 'edge', 'firefox'], 
+                                name: 'BROWSER',
+                                defaultValue: 'edge'
+                            ),
+                            booleanParam(
+                                defaultValue: false, 
+                                description: '', 
+                                name: 'VIDEO'
+                            ),
+                            string(
+                                defaultValue: '', 
+                                name: 'URL', 
+                                trim: true
+                            )
+                        ])
+                    ])
+                }
+                echo "Executing e2e tests on ${BROWSER}"
+                bat label: "Run e2e test on ${BROWSER}", script: "npx cypress run --config video=${VIDEO} --record --key 3f4e069e-0d1a-47e1-afdd-74dc19d3b990 --headless --browser ${BROWSER}"
             }
         }
         
-        stage('Generate Allure report') {
-            steps {
-                echo 'Generat allure report....'
-                bat label: 'Generate allure report', script: 'npm run generate-allure'
-            }
-        }
+        // stage('Generate Allure report') {
+        //     steps {
+        //         echo 'Generat allure report....'
+        //         bat label: 'Generate allure report', script: 'npm run generate-allure'
+        //     }
+        // }
     }
     post {
       always {

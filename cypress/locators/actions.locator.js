@@ -10,6 +10,10 @@ var ActionsLocator = {
 
     focus_locator: function() {
            return '.action-focus'
+    },
+
+    username: function() {
+           return '#login_field';
     }
 };
 

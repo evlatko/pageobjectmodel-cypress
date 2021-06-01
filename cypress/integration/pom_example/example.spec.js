@@ -1,5 +1,7 @@
 //// <reference types="Cypress" />
 
+import ActionsLocator from '../../locators/actions.locator';
+
 describe("Ny second test", () => {
 
     const conf = Cypress.config()
@@ -7,7 +9,7 @@ describe("Ny second test", () => {
     before('Open url', ()=> {
       cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
     })
-  
+
       it("Practice Checkbox", ()=> {
           cy.get('#checkBoxOption1').check().should('be.checked').and('have.value','option1');
           cy.get('#checkBoxOption1').uncheck().should('not.be.checked');

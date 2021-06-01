@@ -15,11 +15,34 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
+const {downloadFile} = require('cypress-downloadfile/lib/addPlugin');
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+const { lighthouse, pa11y, prepareAudit } = require('cypress-audit');
+const getCompareSnapshotsPlugin = require('cypress-visual-regression/dist/plugin');
+
 
 module.exports = (on, config) => {
+
+  getCompareSnapshotsPlugin(on);
+
+  on('before:browser:launch', (browser = {}, launchOptions) => {
+    prepareAudit(launchOptions);
+  });
+  on('task', {
+    lighthouse: lighthouse(),
+  });
+  
+  // on("task", {
+  //   lighthouse: lighthouse((lighthouseReport) => {
+  //     console.log(lighthouseReport); // raw lighthouse reports
+  //   }),
+  //   pa11y: pa11y((pa11yReport) => {
+  //     console.log(pa11yReport); // raw pa11y reports
+  //   }),
+  // });
+
   on('task', {downloadFile})
   on('task', { log (message) { console.log("        ->".concat(message)); return null } });
   allureWriter(on, config);
 }
+
